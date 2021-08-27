@@ -1,0 +1,83 @@
+.container{
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.text{
+    color : white;
+}
+
+.container h1{
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.container a{
+    font-weight: 100;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 41%;
+    margin-right: 30%;
+    color: azure;
+    display: flex;
+}
+
+
+.container form{
+    margin-top: 5%;
+    /* top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,-50%); */
+}
+
+.container form .posttext{
+    margin-top: 28px;
+    margin-left: 28%;
+    margin-right: -10%;
+}
+
+
+.container form .posttext label{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.container form .posttext input{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.container form .posttext button{
+    /* margin-top: 45px; */
+    width: 50.1%;
+    height: 37px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0, 162, 255);
+    letter-spacing: 3px;
+}
+
+.container form .posttext button:hover{
+    cursor: pointer;
+    color: rgb(173, 18, 127);
+    background-color: cyan;
+}
+
+input::-webkit-input-placeholder {
+	letter-spacing: 3px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input[type=text]{
+    font-size: 20px;
+}
