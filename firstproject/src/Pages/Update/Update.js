@@ -2,8 +2,11 @@ import React,{useState} from 'react'
 import '../Home/Home.css';
 import axios from 'axios';
 
-const UpdatePost = (props) => {
+const UpdatePost = () => {
 
+    const pathname = window.location.pathname
+    let myarr=pathname.split("/")
+    const id = myarr[2];
     
     const [name, setname] = useState(" ");
     const [data, setdata] = useState(" ");
@@ -29,7 +32,8 @@ const UpdatePost = (props) => {
             alert("Title or URL is empty.Please Write Something..")
         }
         else{
-            axios.patch(`http://localhost:4000/app/feed/${props._id}`, post)
+            axios.patch(`http://localhost:4000/app/feed/${id}`, post)
+            console.log(id)
         }
 
         

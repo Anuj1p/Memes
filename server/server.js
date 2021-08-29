@@ -16,16 +16,6 @@ mongoose.connect(process.env.DATABASE_ACCESS, {
   useUnifiedTopology : true
 }, () => console.log("Database connected successfully"))
 
-app.get('/feed', async (req, res) => {
-  try {
-    const pos = await posts.find();
-    res.send(pos);
-  } 
-  catch (e) {
-    res.status(400).send(e);
-  }
-})
-
 
 app.use(express.json())
 app.use(cors())

@@ -34,11 +34,11 @@ router.patch("/feed/:id", async (req, res) => {
   try {
     const pos = await posts
       .findByIdAndUpdate(req.params.id, req.body, { new: true })
-      .then((blog) => {
-        if (!blog) {
+      .then((meme) => {
+        if (!meme) {
           return res.status(404).send();
         }
-        res.send(blog);
+        res.send(meme);
       });
     return !pos ? res.sendStatus(404) : res.send(pos);
   } catch (e) {

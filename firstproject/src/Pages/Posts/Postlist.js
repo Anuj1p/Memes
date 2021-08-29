@@ -2,9 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 import './Postlist.css';
-import UpdatePost from '../Update/Update';
+
 
 const PostList = (props) => {
+
 
     return (
         <>
@@ -16,8 +17,7 @@ const PostList = (props) => {
                         {/* <button className='btn btn-danger btn-group2' id={post._id} onClick={() => { axios.delete(`http://localhost:4000/app/feed/${post._id}`, window.location.reload()) }} >Delete</button> */}
                     </div>
                     <div className="button">
-                        <NavLink to = {`/feed/${props._id}`}><button className="btno"  >Edit</button></NavLink>
-                        {/* <button className='btno' onClick={() => <UpdatePost _id = {props._id}/>}>Edit</button> */}
+                        <NavLink to = {`/feed/${post._id}`}><button className="btno"  >Edit</button></NavLink>
                         <button className='btno' id={post._id} onClick={() => { axios.delete(`http://localhost:4000/app/feed/${post._id}`, window.location.reload()) }} >Delete</button>
                     </div>
                 </div>
