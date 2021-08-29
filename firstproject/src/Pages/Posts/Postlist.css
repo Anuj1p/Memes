@@ -13,8 +13,52 @@
 
 .card-cards .card-body{
     display: flex;
-    height: 450px;
+    /* height: 450px; */
     justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+    .card-cards .card-body{
+        flex-direction: column;
+    }    
+    .card-cards .card-body img{
+        width: 350px !important;
+        /* object-fit: cover; */
+    }
+    .card-cards .btno{
+        width: 120px !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+       
+    .card-cards .card-body img{
+        width: 300px !important;
+        /* object-fit: cover; */
+    }
+    .card-cards .btno{
+        width: 120px !important;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+       
+    .card-cards .card-body img{
+        width: 290px !important;
+        /* object-fit: cover; */
+    }
+    .card-cards .btno{
+        width: 120px !important;
+    }
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .card-cards .card-body h5{
